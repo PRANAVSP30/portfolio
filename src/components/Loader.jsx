@@ -6,19 +6,25 @@ const Loader = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    let isCompleted = false;
+    
     const timer = setInterval(() => {
       setProgress((oldProgress) => {
         if (oldProgress >= 100) {
-          clearInterval(timer);
-          setTimeout(() => {
-            onLoadingComplete();
-          }, 800); // Wait a bit after 100%
+          if (!isCompleted) {
+            isCompleted = true;
+            clearInterval(timer);
+            setTimeout(() => {
+              onLoadingComplete();
+            }, 400); // 400ms pause at 100% before fading out
+          }
           return 100;
         }
-        const diff = Math.random() * 15;
+        // Increase progress significantly per tick to load fast (~1.5s total)
+        const diff = Math.random() * 20 + 5; 
         return Math.min(oldProgress + diff, 100);
       });
-    }, 200);
+    }, 80);
 
     return () => clearInterval(timer);
   }, [onLoadingComplete]);
