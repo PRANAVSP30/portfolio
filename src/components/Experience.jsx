@@ -29,6 +29,11 @@ const Experience = () => {
 
   const leadership = [
     {
+      role: 'Founder & CEO',
+      org: 'Naandi',
+      desc: 'Startup initiative focused on building scalable, real-world service ecosystem platforms.'
+    },
+    {
       role: 'Joint Secretary',
       org: 'IEEE',
       desc: 'Managed technical events and coordinated student activities.'
