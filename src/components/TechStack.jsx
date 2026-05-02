@@ -1,50 +1,80 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaJava, FaPython, FaJs, FaDatabase, FaNetworkWired, FaTools,
-  FaMapMarkedAlt, FaGithub, FaFigma, FaCode
+  FaJava, FaPython, FaHtml5, FaCss3Alt, FaReact, FaNetworkWired, 
+  FaDatabase, FaCodeBranch, FaCubes, FaBrain, FaChartLine, FaLanguage,
+  FaGitAlt, FaGithub, FaCode, FaFigma
 } from 'react-icons/fa';
 import { 
-  SiPostgresql, SiDjango
+  SiPostgresql, SiFirebase, SiStreamlit, SiScikitlearn, 
+  SiTensorflow, SiOpencv, SiJupyter
 } from 'react-icons/si';
-import { BsCpuFill } from 'react-icons/bs';
-import { VscFileCode } from 'react-icons/vsc';
+import { BsCpuFill, BsRobot } from 'react-icons/bs';
+import { FiTerminal } from 'react-icons/fi';
 import './TechStack.css';
 
 const TechStack = () => {
   const categories = [
     {
-      title: "💻 Programming",
+      title: "💻 Languages",
       skills: [
-        { name: 'Java', icon: <FaJava />, color: '#f89820' },
         { name: 'Python', icon: <FaPython />, color: '#3776AB' },
-        { name: 'JavaScript', icon: <FaJs />, color: '#F7DF1E' }
+        { name: 'Java', icon: <FaJava />, color: '#f89820' }
+      ]
+    },
+    {
+      title: "🌐 Web Development",
+      skills: [
+        { name: 'HTML', icon: <FaHtml5 />, color: '#E34F26' },
+        { name: 'CSS', icon: <FaCss3Alt />, color: '#1572B6' },
+        { name: 'React', icon: <FaReact />, color: '#61DAFB' },
+        { name: 'REST APIs', icon: <FaNetworkWired />, color: '#4CAF50' },
+        { name: 'Streamlit', icon: <SiStreamlit />, color: '#FF4B4B' }
+      ]
+    },
+    {
+      title: "🗄️ Databases",
+      skills: [
+        { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
+        { name: 'Firebase', icon: <SiFirebase />, color: '#FFCA28' },
+        { name: 'NoSQL', icon: <FaDatabase />, color: '#4DB33D' }
       ]
     },
     {
       title: "🧠 Core Concepts",
       skills: [
-        { name: 'Data Structures & Algorithms', icon: <VscFileCode />, color: '#8b5cf6' },
+        { name: 'Data Structures', icon: <FaCodeBranch />, color: '#8b5cf6' },
         { name: 'DBMS', icon: <FaDatabase />, color: '#F29111' },
-        { name: 'Operating Systems', icon: <BsCpuFill />, color: '#06B6D4' },
-        { name: 'Computer Networks', icon: <FaNetworkWired />, color: '#4CAF50' }
+        { name: 'OOP', icon: <FaCubes />, color: '#06B6D4' },
+        { name: 'Problem Solving', icon: <FaBrain />, color: '#FF7B72' }
       ]
     },
     {
-      title: "🤖 Technologies",
+      title: "🤖 AI & Machine Learning",
       skills: [
-        { name: 'Machine Learning (Basics)', icon: <BsCpuFill />, color: '#E34F26' },
-        { name: 'Google Maps API', icon: <FaMapMarkedAlt />, color: '#4285F4' },
-        { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
-        { name: 'Django', icon: <SiDjango />, color: '#092E20' }
+        { name: 'Scikit-learn', icon: <SiScikitlearn />, color: '#F7931E' },
+        { name: 'TensorFlow/Keras', icon: <SiTensorflow />, color: '#FF6F00' },
+        { name: 'NLP (TF-IDF, Cosine Sim)', icon: <FaLanguage />, color: '#A855F7' },
+        { name: 'Computer Vision', icon: <SiOpencv />, color: '#5C3EE8' },
+        { name: 'Model Evaluation', icon: <FaChartLine />, color: '#10B981' }
       ]
     },
     {
-      title: "🛠 Tools",
+      title: "🛠 Tools & Technologies",
       skills: [
-        { name: 'Git & GitHub', icon: <FaGithub />, color: '#ffffff' },
-        { name: 'Figma', icon: <FaFigma />, color: '#F24E1E' },
-        { name: 'VS Code', icon: <FaCode />, color: '#007ACC' }
+        { name: 'Git', icon: <FaGitAlt />, color: '#F05032' },
+        { name: 'GitHub', icon: <FaGithub />, color: '#ffffff' },
+        { name: 'VS Code', icon: <FaCode />, color: '#007ACC' },
+        { name: 'Jupyter Notebook', icon: <SiJupyter />, color: '#F37626' },
+        { name: 'Figma', icon: <FaFigma />, color: '#F24E1E' }
+      ]
+    },
+    {
+      title: "⚡ Development Approach",
+      skills: [
+        { name: 'Prompt Engineering', icon: <FiTerminal />, color: '#38BDF8' },
+        { name: 'AI-assisted dev', icon: <BsRobot />, color: '#818CF8' },
+        { name: 'Modular coding', icon: <FaCubes />, color: '#34D399' }
       ]
     }
   ];
@@ -71,7 +101,7 @@ const TechStack = () => {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
       >
-        Skills & Tech Stack
+        Technical Skills
       </motion.h2>
 
       <div className="tech-categories">
