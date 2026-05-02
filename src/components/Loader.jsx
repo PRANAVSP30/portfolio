@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './Loader.css';
 
-const Loader = ({ onLoadingComplete }) => {
+const Loader = ({ onComplete }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     if (progress >= 100) {
       const timeout = setTimeout(() => {
-        onLoadingComplete();
+        if (onComplete) onComplete();
       }, 400);
       return () => clearTimeout(timeout);
     }
-  }, [progress, onLoadingComplete]);
+  }, [progress, onComplete]);
 
   useEffect(() => {
     const timer = setInterval(() => {
