@@ -60,7 +60,7 @@ const Hero = () => {
             <a href="#projects" className="btn btn-primary glow-on-hover">
               View Projects <FiArrowRight className="btn-icon" />
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-outline">
+            <a href="/Pranav_SP_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               <FiFileText className="btn-icon" /> View Resume
             </a>
             <a href="#contact" className="btn btn-outline">
