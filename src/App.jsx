@@ -31,7 +31,7 @@ function App() {
             <nav className="navbar">
               <div className="nav-container">
                 <a href="#hero" className="nav-logo">
-                  S<span className="gradient-text">P.</span>
+                  <img src="/logo.png" alt="SP Logo" className="navbar-logo-img" />
                 </a>
                 
                 {/* Desktop Links */}

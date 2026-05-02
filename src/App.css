@@ -19,11 +19,15 @@
 }
 
 .nav-logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--accent-purple);
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.navbar-logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
 }
 
 .nav-links {

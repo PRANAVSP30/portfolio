@@ -27,7 +27,7 @@ const Contact = () => {
             <FiMail className="contact-icon" />
             <span>Email Me</span>
           </a>
-          <a href="https://linkedin.com/in/pranavsp" target="_blank" rel="noreferrer" className="contact-card glow-on-hover">
+          <a href="https://www.linkedin.com/in/pranav-s-p-7b3949304" target="_blank" rel="noreferrer" className="contact-card glow-on-hover">
             <FiLinkedin className="contact-icon" />
             <span>LinkedIn</span>
           </a>
