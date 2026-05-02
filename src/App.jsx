@@ -8,6 +8,7 @@ import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
 import Projects from './components/Projects';
+import DoingNow from './components/DoingNow';
 import Contact from './components/Contact';
 import './App.css';
 
@@ -71,10 +72,11 @@ function App() {
             
             <Hero />
             <About />
+            <Projects />
+            <DoingNow />
             <TechStack />
             <Experience />
             <Achievements />
-            <Projects />
             <Contact />
           </motion.main>
         )}

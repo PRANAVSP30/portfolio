@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiActivity } from 'react-icons/fi';
 import './About.css';
 
 const About = () => {
@@ -36,26 +35,6 @@ const About = () => {
           <p>
             I believe in building with purpose, not just code.
           </p>
-
-          <div className="currently-doing-section">
-            <h3 className="currently-doing-title">
-              <FiActivity className="currently-icon" /> What I'm Doing Now
-            </h3>
-            <div className="currently-grid">
-              <div className="currently-card glow-on-hover">
-                <span className="currently-emoji">🔭</span>
-                <p>Currently building a <strong>Closed-Loop Adaptive Zero Trust Security Model</strong> using Deception Intelligence.</p>
-              </div>
-              <div className="currently-card glow-on-hover">
-                <span className="currently-emoji">🤖</span>
-                <p>Exploring <strong>AI-driven navigation systems</strong> and real-time decision making.</p>
-              </div>
-              <div className="currently-card glow-on-hover">
-                <span className="currently-emoji">🌐</span>
-                <p>Developing scalable platforms like <strong>Naandiverse</strong> for real-world service ecosystems.</p>
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         <motion.div 
