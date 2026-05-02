@@ -38,6 +38,7 @@ function App() {
                 <div className="nav-links">
                   <a href="#about">About</a>
                   <a href="#projects">Work</a>
+                  <a href="#doing-now">What I'm Doing</a>
                   <a href="#skills">Skills</a>
                   <a href="#experience">Experience</a>
                   <a href="#achievements">Achievements</a>

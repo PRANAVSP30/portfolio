@@ -22,8 +22,8 @@ const DoingNow = () => {
             <p>Currently building a <strong>Closed-Loop Adaptive Zero Trust Security Model</strong> using Deception Intelligence.</p>
           </div>
           <div className="currently-card glow-on-hover">
-            <span className="currently-emoji">🤖</span>
-            <p>Exploring <strong>AI-driven navigation systems</strong> and real-time decision making.</p>
+            <span className="currently-emoji">⛓️</span>
+            <p>Conducting a <strong>Case Study of a Blockchain-based Charity Donation System</strong> for transparent giving.</p>
           </div>
           <div className="currently-card glow-on-hover">
             <span className="currently-emoji">🌐</span>
