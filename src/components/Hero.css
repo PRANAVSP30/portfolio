@@ -140,3 +140,16 @@
   background: rgba(139, 92, 246, 0.1);
   border-color: var(--accent-blue);
 }
+
+@media (max-width: 600px) {
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .hero-name {
+    font-size: 3.5rem;
+  }
+}
