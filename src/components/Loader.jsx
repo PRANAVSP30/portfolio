@@ -6,28 +6,25 @@ const Loader = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    let isCompleted = false;
-    
+    if (progress >= 100) {
+      const timeout = setTimeout(() => {
+        onLoadingComplete();
+      }, 400);
+      return () => clearTimeout(timeout);
+    }
+  }, [progress, onLoadingComplete]);
+
+  useEffect(() => {
     const timer = setInterval(() => {
-      setProgress((oldProgress) => {
-        if (oldProgress >= 100) {
-          if (!isCompleted) {
-            isCompleted = true;
-            clearInterval(timer);
-            setTimeout(() => {
-              onLoadingComplete();
-            }, 400); // 400ms pause at 100% before fading out
-          }
-          return 100;
-        }
-        // Increase progress significantly per tick to load fast (~1.5s total)
-        const diff = Math.random() * 20 + 5; 
-        return Math.min(oldProgress + diff, 100);
+      setProgress((prev) => {
+        if (prev >= 100) return 100;
+        const diff = Math.random() * 20 + 5;
+        return Math.min(prev + diff, 100);
       });
     }, 80);
 
     return () => clearInterval(timer);
-  }, [onLoadingComplete]);
+  }, []);
 
   return (
     <motion.div 
