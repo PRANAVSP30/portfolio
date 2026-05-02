@@ -50,16 +50,6 @@ const TechStack = () => {
       ]
     },
     {
-      title: "🤖 AI & Machine Learning",
-      skills: [
-        { name: 'Scikit-learn', icon: <SiScikitlearn />, color: '#F7931E' },
-        { name: 'TensorFlow/Keras', icon: <SiTensorflow />, color: '#FF6F00' },
-        { name: 'NLP (TF-IDF, Cosine Sim)', icon: <FaLanguage />, color: '#A855F7' },
-        { name: 'Computer Vision', icon: <SiOpencv />, color: '#5C3EE8' },
-        { name: 'Model Evaluation', icon: <FaChartLine />, color: '#10B981' }
-      ]
-    },
-    {
       title: "🛠 Tools & Technologies",
       skills: [
         { name: 'Git', icon: <FaGitAlt />, color: '#F05032' },
