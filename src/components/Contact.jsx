@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiPhone, FiInstagram } from 'react-icons/fi';
 import './Contact.css';
 
 const Contact = () => {
@@ -34,6 +34,10 @@ const Contact = () => {
           <a href="https://github.com/PRANAVSP30" target="_blank" rel="noreferrer" className="contact-card glow-on-hover">
             <FiGithub className="contact-icon" />
             <span>GitHub</span>
+          </a>
+          <a href="https://www.instagram.com/pranav_sp_1979?igsh=bXJyZjBwcXVyZ3hq" target="_blank" rel="noreferrer" className="contact-card glow-on-hover">
+            <FiInstagram className="contact-icon" />
+            <span>Instagram</span>
           </a>
         </div>
       </motion.div>
