@@ -16,6 +16,18 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    
+    setTimeout(() => {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 150); // Delay allows menu close animation to start
+  };
+
   return (
     <div className="app-wrapper">
       <AnimatePresence>
@@ -59,12 +71,12 @@ function App() {
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                   >
-                    <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
-                    <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
-                    <a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a>
-                    <a href="#achievements" onClick={() => setIsMenuOpen(false)}>Achievements</a>
-                    <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
-                    <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
+                    <a href="#about" onClick={(e) => handleNavClick(e, 'about')}>About</a>
+                    <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>Skills</a>
+                    <a href="#experience" onClick={(e) => handleNavClick(e, 'experience')}>Experience</a>
+                    <a href="#achievements" onClick={(e) => handleNavClick(e, 'achievements')}>Achievements</a>
+                    <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
+                    <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
                   </motion.div>
                 )}
               </AnimatePresence>
