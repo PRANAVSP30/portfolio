@@ -20,39 +20,42 @@
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .skill-item {
   background: var(--bg-secondary);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 1.5rem 1rem;
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   transition: var(--transition-fast);
   cursor: default;
-  text-align: center;
 }
 
 .skill-item:hover {
   border-color: rgba(139, 92, 246, 0.3);
   background: rgba(18, 18, 26, 0.8);
+  transform: translateY(-2px);
 }
 
 .skill-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  margin-right: 0.6rem;
+  display: flex;
+  align-items: center;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
 }
 
 .skill-name {
   font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-primary);
+  margin: 0;
 }
