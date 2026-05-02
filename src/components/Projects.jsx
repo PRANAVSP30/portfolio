@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiFolder } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, FiFolder, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import './Projects.css';
 
 const Projects = () => {
@@ -63,21 +63,60 @@ const Projects = () => {
     }
   ];
 
+  const carouselRef = useRef(null);
+
+  // Auto-scroll functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (carouselRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+        if (scrollLeft + clientWidth >= scrollWidth - 10) {
+          carouselRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          carouselRef.current.scrollBy({ left: 350, behavior: 'smooth' });
+        }
+      }
+    }, 4000); // Scroll every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -350, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 350, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="projects-section container" id="projects">
-      <motion.h2 
-        className="section-title gradient-text"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-      >
-        Featured Work
-      </motion.h2>
-      
-      <p className="projects-subtitle">Swipe to explore my recent projects</p>
+      <div className="projects-header-flex">
+        <motion.h2 
+          className="section-title gradient-text"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+        >
+          Featured Work
+        </motion.h2>
 
-      <div className="projects-carousel">
+        <div className="carousel-controls">
+          <button onClick={scrollLeft} className="control-btn" aria-label="Scroll Left">
+            <FiChevronLeft />
+          </button>
+          <button onClick={scrollRight} className="control-btn" aria-label="Scroll Right">
+            <FiChevronRight />
+          </button>
+        </div>
+      </div>
+      
+      <div className="projects-carousel" ref={carouselRef}>
         {projects.map((project, index) => (
           <motion.div 
             className="project-card glow-on-hover"
