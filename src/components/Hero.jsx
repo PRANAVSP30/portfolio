@@ -30,10 +30,8 @@ const Hero = () => {
           <p className="hero-greeting">{getGreeting()}! Welcome to my digital workspace.</p>
           
           <div className="hero-description">
-            <p>I believe systems should do more than function.</p>
-            <p>They should think.</p>
-            <p>They should adapt.</p>
-            <p>They should last.</p>
+            <p>Software Development, AI/ML & Backend Engineering.</p>
+            <p>Designing scalable applications & production-oriented systems.</p>
           </div>
 
           <h1 className="hero-name">I'm Pranav S P.</h1>
@@ -42,11 +40,13 @@ const Hero = () => {
             <span className="gradient-text">
               <TypeAnimation
                 sequence={[
+                  'Software Engineer.',
+                  2000,
+                  'AI / ML Developer.',
+                  2000,
+                  'Backend Engineer.',
+                  2000,
                   'System Builder.',
-                  2000,
-                  'Problem Solver.',
-                  2000,
-                  'AI Engineer in Progress.',
                   2000,
                 ]}
                 wrapper="span"

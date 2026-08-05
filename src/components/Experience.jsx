@@ -6,23 +6,32 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
+      role: 'Software Development Intern',
+      company: 'AnveshakHub Private Limited.',
+      duration: 'June 2026 – Present',
+      points: [
+        'Developing enterprise-grade web applications by implementing scalable features aligned with real industry problem statements.',
+        'Designing and integrating backend modules, REST APIs, and database components to support efficient application workflows.',
+        'Collaborating with cross-functional teams to analyse requirements, optimize system functionality, and deliver high-quality software solutions.',
+        'Contributing to software testing, documentation, debugging, and feature enhancement while following modern software engineering practices.'
+      ]
+    },
+    {
       role: 'Software Intern',
       company: 'CODTECH IT Solutions Pvt. Ltd.',
       duration: 'Nov 2025 – Feb 2026',
       points: [
-        'Worked on structured programming tasks and gained exposure to API integration.',
-        'Practiced file handling and concurrent processing concepts.',
-        'Followed modular coding practices and documentation standards.'
+        'Developed Java-based applications implementing file handling, API integration, and concurrent processing concepts.',
+        'Applied modular coding practices and structured design approaches to build maintainable and efficient programs.'
       ]
     },
     {
       role: 'AI & Machine Learning Intern',
       company: 'Elevate Labs',
-      duration: 'Jan 2026 – Apr 2026',
+      duration: 'Jan 01, 2026 – Apr 30, 2026',
       points: [
-        'Completed guided AI/ML tasks focused on classification and evaluation.',
-        'Practiced data preprocessing, result interpretation, and performance analysis.',
-        'Strengthened understanding of end-to-end ML workflows.'
+        'Built and evaluated machine learning models across multiple real-world datasets, focusing on classification and prediction tasks.',
+        'Worked on data preprocessing, feature engineering, and performance evaluation, gaining hands-on experience in end-to-end ML workflows.'
       ]
     }
   ];

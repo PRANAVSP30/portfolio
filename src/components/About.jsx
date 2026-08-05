@@ -24,16 +24,16 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <p>
-            I’m a Computer Science Engineering student driven by a deep interest in building systems that solve real-world problems.
+            I am a <strong>Computer Science Engineering student</strong> with hands-on experience in <strong>software development, AI/ML, and backend engineering</strong> through multiple industry internships.
           </p>
           <p>
-            My work lies at the intersection of <strong>Artificial Intelligence, Security, and System Design</strong>. I enjoy transforming complex ideas into practical, working solutions—whether it’s designing an AI-based drone navigation system or developing a zero trust security model using deception intelligence.
+            Passionate about designing scalable applications, solving real-world problems, and building production-oriented systems using <strong>Java, Python, and modern web frameworks</strong>.
           </p>
           <p>
-            Beyond academics, I actively take leadership roles, collaborate in teams, and continuously explore new technologies to push my boundaries.
+            Currently pursuing B.E. in Computer Science at <strong>Sai Vidya Institute of Technology (VTU)</strong> with a <strong>CGPA of 8.81/10</strong>.
           </p>
           <p>
-            I believe in building with purpose, not just code.
+            I believe in building robust, production-grade systems with clean architecture, performance efficiency, and practical real-world impact.
           </p>
         </motion.div>
 

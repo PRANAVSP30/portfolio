@@ -6,59 +6,51 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Adaptive Zero Trust Security Model',
+      subtitle: 'Deception Intelligence & SOC Dashboard',
+      description: 'Adaptive Zero Trust API Gateway redirecting suspicious logins to high-fidelity honeypots, with a live SOC dashboard powered by SSE and Gemini AI for automated threat intelligence.',
+      tags: ['Zero Trust', 'API Gateway', 'Gemini AI', 'SSE', 'Python'],
+      github: 'https://github.com/PRANAVSP30',
+      live: ''
+    },
+    {
       title: 'Samudra Sutra',
-      subtitle: 'Environmental Intelligence',
-      description: 'Global-scale pollution detection system with citizen-based data collection and AI-driven waste classification.',
-      tags: ['Next.js', 'Firebase', 'Gemini AI'],
+      subtitle: 'Environmental Intelligence Platform',
+      description: 'Scalable platform integrating AI-based classification and geospatial analysis to monitor and track pollution patterns with real-time data visualization.',
+      tags: ['Next.js', 'Firebase', 'Gemini AI', 'Geospatial AI'],
       github: 'https://github.com/PRANAVSP30/SAMUDRA_SUTRA',
       live: ''
     },
     {
       title: 'AEGIS',
-      subtitle: 'AI Financial Threat Engine',
-      description: 'Multi-model financial risk engine featuring anomaly detection, fraud scoring, and LLM-based recommendations.',
-      tags: ['Random Forest', 'NetworkX', 'Streamlit'],
+      subtitle: 'AI Financial Threat Intelligence Engine',
+      description: 'Multi-model AI combining anomaly detection, fraud prediction, and credit risk analysis (Isolation Forest, Random Forest, Logistic Regression) with unified risk scoring.',
+      tags: ['Isolation Forest', 'Random Forest', 'Logistic Regression', 'Fintech'],
       github: 'https://github.com/PRANAVSP30/AEGIS_AI_Security',
       live: ''
     },
     {
+      title: 'FacultyTrack',
+      subtitle: 'AI-Based Faculty Monitoring System',
+      description: 'Face recognition-based attendance system enabling automated faculty tracking with live camera integration, real-time recognition pipeline, and dashboard.',
+      tags: ['Face Recognition', 'OpenCV', 'Python', 'Dashboard'],
+      github: 'https://github.com/PRANAVSP30/College_attendence_system',
+      live: ''
+    },
+    {
       title: 'FraudShield AI',
-      subtitle: 'Credit Card Security',
-      description: 'End-to-end fraud detection pipeline with transaction simulation and an impressive ~0.97 ROC-AUC score.',
-      tags: ['XGBoost', 'SMOTE', 'Cloud'],
+      subtitle: 'Credit Card Fraud Detection System',
+      description: 'End-to-end fraud detection pipeline using XGBoost with SMOTE, achieving ~0.97 ROC-AUC on imbalanced financial data with transaction simulation.',
+      tags: ['XGBoost', 'SMOTE', 'ROC-AUC 0.97', 'Fintech'],
       github: 'https://github.com/PRANAVSP30',
       live: ''
     },
     {
       title: 'ResumeMatch AI',
-      subtitle: 'NLP Ranking System',
-      description: 'Intelligent resume screening utilizing TF-IDF and cosine similarity for precise skill matching and HR reporting.',
-      tags: ['NLP', 'TF-IDF', 'pdfplumber'],
+      subtitle: 'NLP Resume Ranking System',
+      description: 'NLP-based ranking engine utilizing TF-IDF and cosine similarity to match resumes with job descriptions, featuring automated skill extraction and HR scoring.',
+      tags: ['NLP', 'TF-IDF', 'Cosine Similarity', 'Python'],
       github: 'https://github.com/PRANAVSP30/Resume_Matcher_AI',
-      live: ''
-    },
-    {
-      title: 'Real-Time Sign Language',
-      subtitle: 'Assistive AI Tool',
-      description: 'Assistive communication tool using 21 hand landmarks for real-time gesture recognition with text-to-speech.',
-      tags: ['MediaPipe', 'TensorFlow', 'Keras'],
-      github: 'https://github.com/PRANAVSP30/Sign_Language_Recognition',
-      live: ''
-    },
-    {
-      title: 'Plant Disease Detection',
-      subtitle: 'Agricultural Diagnostics',
-      description: 'CNN-based image classification system achieving 92%+ accuracy for real-time plant disease identification.',
-      tags: ['TensorFlow', 'OpenCV', 'Streamlit'],
-      github: 'https://github.com/PRANAVSP30/Plant_disease_detection',
-      live: ''
-    },
-    {
-      title: 'FacultyTrack',
-      subtitle: 'AI Attendance System',
-      description: 'Face recognition-based institutional monitoring system deployed with real-time recognition capabilities.',
-      tags: ['Face Recognition', 'Cloudflare', 'GitHub Pages'],
-      github: 'https://github.com/PRANAVSP30/College_attendence_system',
       live: ''
     }
   ];

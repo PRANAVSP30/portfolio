@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiMail, FiPhone, FiInstagram } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiPhone, FiInstagram, FiMapPin } from 'react-icons/fi';
 import './Contact.css';
 
 const Contact = () => {
@@ -27,7 +27,7 @@ const Contact = () => {
             <FiMail className="contact-icon" />
             <span>Email Me</span>
           </a>
-          <a href="https://www.linkedin.com/in/pranav-s-p-7b3949304" target="_blank" rel="noreferrer" className="contact-card glow-on-hover">
+          <a href="https://linkedin.com/in/pranavsp" target="_blank" rel="noreferrer" className="contact-card glow-on-hover">
             <FiLinkedin className="contact-icon" />
             <span>LinkedIn</span>
           </a>
@@ -39,6 +39,10 @@ const Contact = () => {
             <FiInstagram className="contact-icon" />
             <span>Instagram</span>
           </a>
+          <div className="contact-card glow-on-hover location-card">
+            <FiMapPin className="contact-icon" />
+            <span>Bangalore, Karnataka, India</span>
+          </div>
         </div>
       </motion.div>
 

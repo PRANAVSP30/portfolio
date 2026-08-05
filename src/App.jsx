@@ -4,6 +4,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import Loader from './components/Loader';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
 import TechStack from './components/TechStack';
 import Experience from './components/Experience';
 import Achievements from './components/Achievements';
@@ -37,6 +38,7 @@ function App() {
                 {/* Desktop Links */}
                 <div className="nav-links">
                   <a href="#about">About</a>
+                  <a href="#education">Education</a>
                   <a href="#projects">Work</a>
                   <a href="#doing-now">What I'm Doing</a>
                   <a href="#skills">Skills</a>
@@ -61,6 +63,7 @@ function App() {
                     exit={{ opacity: 0, height: 0 }}
                   >
                     <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+                    <a href="#education" onClick={() => setIsMenuOpen(false)}>Education</a>
                     <a href="#projects" onClick={() => setIsMenuOpen(false)}>Featured Work</a>
                     <a href="#doing-now" onClick={() => setIsMenuOpen(false)}>What I'm Doing</a>
                     <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
@@ -74,6 +77,7 @@ function App() {
             
             <Hero />
             <About />
+            <Education />
             <Projects />
             <DoingNow />
             <TechStack />

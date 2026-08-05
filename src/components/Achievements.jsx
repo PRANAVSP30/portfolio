@@ -5,10 +5,11 @@ import './Achievements.css';
 
 const Achievements = () => {
   const achievements = [
-    'Participated in national-level ideathon.',
-    'Built multiple real-world projects solving practical problems.',
-    'Active contributor in technical communities.',
+    'Treasurer – IEEE Educational Society, managed budgeting and financial planning.',
+    'Joint Secretary – IEEE, coordinated technical events and student activities.',
+    'Lead Coordinator – CodeSprint Hackathon 2025 & Webcraft 2025.',
     'Selected Participant – Startup Mahakumbh 2025.',
+    'Founder & CEO – Naandi (Startup initiative focused on building scalable, real-world service ecosystem platforms).',
     'Designed and documented Election Management System architecture.'
   ];
 

@@ -1,16 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaJava, FaPython, FaHtml5, FaCss3Alt, FaReact, FaNetworkWired, 
-  FaDatabase, FaCodeBranch, FaCubes, FaBrain, FaChartLine, FaLanguage,
-  FaGitAlt, FaGithub, FaCode, FaFigma
+  FaJava, FaPython, FaJs, FaNodeJs, FaHtml5, FaCss3Alt, FaReact, FaNetworkWired, 
+  FaDatabase, FaCodeBranch, FaCubes, FaBrain, FaGitAlt, FaGithub, FaCode, FaFigma
 } from 'react-icons/fa';
 import { 
-  SiPostgresql, SiFirebase, SiStreamlit, SiScikitlearn, 
-  SiTensorflow, SiOpencv, SiJupyter
+  SiExpress, SiPostgresql, SiMongodb, SiFirebase, SiSupabase, SiJupyter, SiStreamlit
 } from 'react-icons/si';
-import { BsCpuFill, BsRobot } from 'react-icons/bs';
-import { FiTerminal } from 'react-icons/fi';
+import { BsRobot } from 'react-icons/bs';
+import { FiTerminal, FiCpu } from 'react-icons/fi';
 import './TechStack.css';
 
 const TechStack = () => {
@@ -19,7 +17,8 @@ const TechStack = () => {
       title: "💻 Languages",
       skills: [
         { name: 'Python', icon: <FaPython />, color: '#3776AB' },
-        { name: 'Java', icon: <FaJava />, color: '#f89820' }
+        { name: 'Java', icon: <FaJava />, color: '#f89820' },
+        { name: 'JavaScript', icon: <FaJs />, color: '#F7DF1E' }
       ]
     },
     {
@@ -27,16 +26,19 @@ const TechStack = () => {
       skills: [
         { name: 'HTML', icon: <FaHtml5 />, color: '#E34F26' },
         { name: 'CSS', icon: <FaCss3Alt />, color: '#1572B6' },
-        { name: 'React', icon: <FaReact />, color: '#61DAFB' },
-        { name: 'REST APIs', icon: <FaNetworkWired />, color: '#4CAF50' },
-        { name: 'Streamlit', icon: <SiStreamlit />, color: '#FF4B4B' }
+        { name: 'React.js', icon: <FaReact />, color: '#61DAFB' },
+        { name: 'Node.js', icon: <FaNodeJs />, color: '#339933' },
+        { name: 'Express.js', icon: <SiExpress />, color: '#ffffff' },
+        { name: 'REST APIs', icon: <FaNetworkWired />, color: '#4CAF50' }
       ]
     },
     {
-      title: "🗄️ Databases",
+      title: "🗄️ Database",
       skills: [
         { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#336791' },
+        { name: 'MongoDB', icon: <SiMongodb />, color: '#47A248' },
         { name: 'Firebase', icon: <SiFirebase />, color: '#FFCA28' },
+        { name: 'Supabase', icon: <SiSupabase />, color: '#3ECF8E' },
         { name: 'NoSQL', icon: <FaDatabase />, color: '#4DB33D' }
       ]
     },
@@ -50,7 +52,7 @@ const TechStack = () => {
       ]
     },
     {
-      title: "🛠 Tools & Technologies",
+      title: "🛠 Tools",
       skills: [
         { name: 'Git', icon: <FaGitAlt />, color: '#F05032' },
         { name: 'GitHub', icon: <FaGithub />, color: '#ffffff' },
@@ -60,11 +62,11 @@ const TechStack = () => {
       ]
     },
     {
-      title: "⚡ Development Approach",
+      title: "🤖 AI & Development",
       skills: [
         { name: 'Prompt Engineering', icon: <FiTerminal />, color: '#38BDF8' },
         { name: 'AI-assisted dev', icon: <BsRobot />, color: '#818CF8' },
-        { name: 'Modular coding', icon: <FaCubes />, color: '#34D399' }
+        { name: 'Feature Engineering', icon: <FiCpu />, color: '#34D399' }
       ]
     }
   ];
