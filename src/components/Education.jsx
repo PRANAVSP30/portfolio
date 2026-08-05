@@ -8,7 +8,7 @@ const Education = () => {
     {
       degree: 'B.E. in Computer Science',
       institution: 'Sai Vidya Institute of Technology (VTU)',
-      duration: 'Current Semester: 6th',
+      duration: 'Current Semester: 7th',
       score: 'CGPA: 8.81/10',
       status: 'Present',
       badge: 'Current'
