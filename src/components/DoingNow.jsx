@@ -18,16 +18,12 @@ const DoingNow = () => {
         </h3>
         <div className="currently-grid">
           <div className="currently-card glow-on-hover">
-            <span className="currently-emoji">🔭</span>
-            <p>Currently building a <strong>Closed-Loop Adaptive Zero Trust Security Model</strong> using Deception Intelligence.</p>
+            <span className="currently-emoji">💼</span>
+            <p>Working as a <strong>Software Development Intern at AnveshakHub Private Limited</strong>, building enterprise-grade web applications, REST APIs, and backend system components.</p>
           </div>
           <div className="currently-card glow-on-hover">
-            <span className="currently-emoji">⛓️</span>
-            <p>Conducting a <strong>Case Study of a Blockchain-based Charity Donation System</strong> for transparent giving.</p>
-          </div>
-          <div className="currently-card glow-on-hover">
-            <span className="currently-emoji">🌐</span>
-            <p>Developing scalable platforms like <strong>Naandiverse</strong> for real-world service ecosystems.</p>
+            <span className="currently-emoji">🛡️</span>
+            <p>Deploying and finalizing an <strong>Adaptive Closed-Loop Zero Trust Security Model</strong> integrated with Deception Intelligence and live SOC dashboard.</p>
           </div>
         </div>
       </motion.div>
